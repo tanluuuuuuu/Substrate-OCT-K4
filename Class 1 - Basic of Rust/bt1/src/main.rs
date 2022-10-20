@@ -20,9 +20,9 @@ fn main() {
         }
         if (!flag)
         {
-            println!("Not substring");
+            println!("Not subarray");
             break;
         }
     }
-    println!("Substring");
+    println!("Subarray");
 }
