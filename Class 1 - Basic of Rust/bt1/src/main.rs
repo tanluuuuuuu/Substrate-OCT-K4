@@ -27,7 +27,7 @@ fn main() {
     //     }
     // }
     // println!("Subarray");
-    
+
     let mut it = sub_arr.iter();
     let mut number = it.next();
     for (idx, num_in_org_arr) in org_arr.iter().enumerate() {
@@ -40,15 +40,9 @@ fn main() {
             },
             None => {
                 println!("Subarray");
-                break;
+                return;
             }
         }
     }
-    match number { 
-        Some(x) => {
-            println!("Not Subarray");
-        },
-        None => {
-        }
-    }
+    println!("Not subarray");
 }
